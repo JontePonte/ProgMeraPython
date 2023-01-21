@@ -6,6 +6,11 @@ import numpy as np
 # Skapa en NumPy-array som innehåller nedanstående lista i omvänd ordning. 
 # [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
 
+array_6 = np.array([10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25])
+
+array_6_backwards = array_6[-1::-1]
+print(array_6_backwards)
+
 
 
 # Uppgift 7:
