@@ -77,7 +77,7 @@ np_2 = np.array([1,2,3,4,5, 60,70,80])
 # Nedanstående lista innehåller temperaturer i Fahrenheit (F). Skriv en programrad som konverterar dessa till
 # grader Celsius (C). Formel: C = (5/9*(F-32))
 
-[75, 69, 32, 45, 21]
+a = [75, 69, 32, 45, 21]
 
 
 
