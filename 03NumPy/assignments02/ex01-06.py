@@ -4,19 +4,20 @@ import numpy as np
 # 1. Skriv ett pythonprogram som använder modulen NumPy och generear följande 
 # NumPy-array:
 
-a = [[ 0,  1,  2,  3,  4],
+list_1 = [[ 0,  1,  2,  3,  4],
     [ 1,  2,  3,  4,  5],
     [ 4,  5,  6,  7,  8],
     [ 9, 10, 11, 12, 13],
     [16, 17, 18, 19, 20]]
 
-print(np.__version__)
+array_1 = np.array(list_1)
+# print(array_1)
 
 # 2. Skriv ett pythonprogram som använder NumPy-modulen för att 
 # generera en talföjld av 20 slumpmässiga tal och omvandlar dessa till
 # en matris med 5 rader och 4 kolumner som skrivs ut. Därefter placeras de element 
 # i NumPy-arrayen som är större än -0.5 i en ny array och skrivs ut.
-
+# print(list_rand_2)
 
 
 
