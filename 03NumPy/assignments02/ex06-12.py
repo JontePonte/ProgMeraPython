@@ -46,53 +46,81 @@ array_8 = np.arange(0,100,4).reshape(5,5)   #Skipped the create-list-part
 
 
 # 9. Skapa följande två NumPy-arrayer:
-A = [[ 0,  1,  2,  3,  4],
- [ 5,  6,  7,  8,  9],
- [10, 11, 12, 13, 14],
- [15, 16, 17, 18, 19],
- [20, 21, 22, 23, 24],]
+# A = [[ 0,  1,  2,  3,  4],
+#  [ 5,  6,  7,  8,  9],
+#  [10, 11, 12, 13, 14],
+#  [15, 16, 17, 18, 19],
+#  [20, 21, 22, 23, 24],]
 
-B = [[20, 21, 22, 23, 24],
- [25, 26, 27, 28, 29],
- [30, 31, 32, 33, 34],
- [35, 36, 37, 38, 39],
- [40, 41, 42, 43, 44],]
+# B = [[20, 21, 22, 23, 24],
+#  [25, 26, 27, 28, 29],
+#  [30, 31, 32, 33, 34],
+#  [35, 36, 37, 38, 39],
+#  [40, 41, 42, 43, 44],]
 # Skriv därefter ut alla gemensamma element i de två NumPy-arrayerna.
+
+array_9_a = np.arange(0,25).reshape(5,5)
+array_9_b = np.arange(20, 45).reshape(5,5)
+
+# print(np.intersect1d(array_9_a, array_9_b))
 
 
 
 # 10. Skapa en slumpad NumPy-array med med värden mellan 2 och 15 och följande 
 # form och omvandla denna till en vektor (1d NumPy-array).
     
-A = [[12, 11,  2,  6, 12],
- [ 9, 14, 11, 13, 11],
- [11, 13,  8, 12, 10],
- [ 3,  9,  5, 13, 11],
- [ 3,  9,  7, 10,  9],
- [ 8,  8,  2,  5, 12],
- [ 8,  5, 10,  6,  2],
- [13,  6,  4,  7,  4],
- [ 6,  2,  5,  9, 10],
- [10,  5,  3, 10,  2],]
+# A = [[12, 11,  2,  6, 12],
+#  [ 9, 14, 11, 13, 11],
+#  [11, 13,  8, 12, 10],
+#  [ 3,  9,  5, 13, 11],
+#  [ 3,  9,  7, 10,  9],
+#  [ 8,  8,  2,  5, 12],
+#  [ 8,  5, 10,  6,  2],
+#  [13,  6,  4,  7,  4],
+#  [ 6,  2,  5,  9, 10],
+#  [10,  5,  3, 10,  2],]
+
+array_10 = np.random.randint(2,16,(10,5))
+# print(array_10.flatten())
 
 
 
 # 11. Skapa en slumpad NumPy-array med med värden mellan 20 och 135 och följande 
 #     form och  och skriv ut maxvärdet i varje rad respektive kolumn.
-A = [[ 46, 125,  36,  88,  62],
- [ 75,  96,  99, 109,  34],
- [111,  77, 109,  31,  26],
- [ 62,  76,  21,  27,  71],
- [ 47,  93,  35,  21, 130],
- [ 43, 105,  44,  27,  42],
- [ 74,  97,  36, 126,  90],
- [ 55,  51,  52,  65,  79],
- [ 65,  81,  40, 134, 105],
- [134,  20,  23,  75, 115],
- [ 76,  23,  53,  92,  20],
- [ 72, 110,  81,  90,  98],]
+# A = [[ 46, 125,  36,  88,  62],
+#  [ 75,  96,  99, 109,  34],
+#  [111,  77, 109,  31,  26],
+#  [ 62,  76,  21,  27,  71],
+#  [ 47,  93,  35,  21, 130],
+#  [ 43, 105,  44,  27,  42],
+#  [ 74,  97,  36, 126,  90],
+#  [ 55,  51,  52,  65,  79],
+#  [ 65,  81,  40, 134, 105],
+#  [134,  20,  23,  75, 115],
+#  [ 76,  23,  53,  92,  20],
+#  [ 72, 110,  81,  90,  98],]
+
+array_11 = np.random.randint(20, 136, (12,5))
+# print(array_11)
+
+# for index in range(array_11.shape[0]):
+#     print(np.amax(array_11[index, :]))
+
+# for index in range(array_11.shape[1]):
+#     print(np.amax(array_11[:,index]))
 
 
 # 12. Använd Binets formel 
 #     fn=[((1+5^1/2)/2)^n-((1-5^1/2)/2)^n]*(1/5^1/2)
 #     för att räkna de 15 första talen i Fibonacci talföjlden.
+
+x_12 = np.arange(16)
+
+a_12 = (1+np.sqrt(5))/2
+b_12 = (1-np.sqrt(5))/2
+c_12 = 1/np.sqrt(5)
+
+array_12 = np.rint((a_12**x_12 - b_12**x_12) * c_12)
+array_12 = np.array(array_12, dtype=int)
+
+print(array_12)
