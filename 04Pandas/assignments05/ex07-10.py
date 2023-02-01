@@ -34,3 +34,7 @@ filt = (temperature_data['Froson'] >= temperature_data['Falsterbo']) &\
 # Hur många grader skiljde sig medeltemperaturen mellan Fröson och Falsterbo 
 # under december månad 2018?
 
+filt = (temperature_data['Datum'] >= '2018-12-01') & (temperature_data['Datum'] <= '2018-12-31')
+mean_diff = temperature_data[filt]['Falsterbo'].mean() - temperature_data[filt]['Froson'].mean()
+
+print(mean_diff)
