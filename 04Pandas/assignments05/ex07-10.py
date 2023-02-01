@@ -38,3 +38,4 @@ filt = (temperature_data['Datum'] >= '2018-12-01') & (temperature_data['Datum'] 
 mean_diff = temperature_data[filt]['Falsterbo'].mean() - temperature_data[filt]['Froson'].mean()
 
 print(mean_diff)
+
