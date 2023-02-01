@@ -27,4 +27,10 @@ filt = (temperature_data['Froson'] >= temperature_data['Falsterbo']) &\
     (temperature_data['Datum'] >= '2019-06-01') & \
     (temperature_data['Datum'] <= '2019-08-31')
 
-print(temperature_data[filt])
+# print(temperature_data[filt])
+
+
+# Uppgift 10:
+# Hur många grader skiljde sig medeltemperaturen mellan Fröson och Falsterbo 
+# under december månad 2018?
+
