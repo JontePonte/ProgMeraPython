@@ -20,5 +20,5 @@ temperature_data = pd.read_csv('04Pandas/assignments05/temp_falsterbo_froson.csv
 # Uppgift 3:
 # Skriv ett program som gör en sammanställning av innehållet i 
 # 'temperatur_data' med avseende på antal data, medelvärde, min- och max- värde
-print(temperature_data.info())
 
+print(temperature_data.describe())
