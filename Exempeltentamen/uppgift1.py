@@ -235,7 +235,8 @@ Logiskt fel eller syntaxfel 4
 Radnummer:
 Ursprunglig kodrad:
 Justerad kodrad:
-Orsak till att kodraden ändrats: 
+Orsak till att kodraden ändrats:
+
 Logiskt fel eller syntaxfel 5
 Radnummer:
 Ursprunglig kodrad:
