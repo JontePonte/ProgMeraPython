@@ -9,7 +9,8 @@ import pandas as pd
 # DataFrame-objekt:
 df = pd.DataFrame([[10, 'tjugo', 30], ['fyrtio', 50, 'sextio']])
 
-
+df_list = df.values.tolist() # a bit weird but to_list() does not work...
+# print(df_list)
 
 
 # Uppgift 10:
