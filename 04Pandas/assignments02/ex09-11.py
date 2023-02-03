@@ -19,7 +19,9 @@ df_list = df.values.tolist() # a bit weird but to_list() does not work...
 
 # Numpy-arrayen ska vara av typen 'int64'
 df = pd.DataFrame([[10.3, 9.9, 30.0], [14.3, -50.6, 17.9]])
+numpy_array = df.to_numpy().astype('int64')
 
+# print(numpy_array)
 
 
 
@@ -29,3 +31,20 @@ df = pd.DataFrame([[10.3, 9.9, 30.0], [14.3, -50.6, 17.9]])
 # med 'Artikelnummer', 'Artikel' och 'Pris'. Konvertera därefter det strängindexerat fältet till 
 # ett DataFrame-objekt med namnet 'artikel_data'.
 
+#Solution
+data1 = {
+    'Article number': [1, 2, 3],
+    'Article': ['Fisk', 'Snusktidning', 'Golden Retriever'],
+    'Price': [4, 1337, 5]
+    }
+
+df_data1 = pd.DataFrame(data1)
+df_data1.set_index('Article number', inplace=True)  # Sets article number as index
+print(df_data1)
+
+# Messing around. This works as well, perhaps easier as the number and price automatically 
+# connects to the article
+data2 = [[1, 'Fisk', 4], [2, 'Snusktidning', 1337], [3, 'GolderRetriever', 5]]
+df_data2 = pd.DataFrame(data2, columns=['Article number', 'Article', 'Price'])
+df_data2.set_index('Article number', inplace=True)
+print(df_data2)
