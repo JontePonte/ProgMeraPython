@@ -20,9 +20,9 @@ ds_dict = pd.Series(dict_lista, dtype=float)
 # med namnet python_list. 
 
 ds = pd.Series([1, 2, 'tre', 4, 'fem'])
-python_list = ds.to_list()
+python_list = ds.to_list()  # tolist() also works
 
-# print(python_list)
+print(python_list)
 
 
 # Uppgift 7:
@@ -56,4 +56,4 @@ ds_2_num = pd.to_numeric(ds_2, downcast='integer', errors='coerce')
 ds = pd.Series([1, 3.3, 4.1, 5.2])
 ds_numpy = ds.to_numpy()
 
-print(type(ds_numpy))
+# print(type(ds_numpy))
