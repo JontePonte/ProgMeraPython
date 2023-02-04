@@ -5,8 +5,8 @@ import numpy as np
 
 # Uppgift 7:
 # Skriv ett program som stryker de kolumner som innehåller 'NaN' eller 'None'.
-#Skapa ett strängindexerat fält (lista) innehållande informationen om de begagnade bilarna:
 
+# Skapa ett strängindexerat fält (lista) innehållande informationen om de begagnade bilarna:
 beg_bilar = {'Bilmärke'   :['Volvo', 'BMW', 'AUDI', 'VW',   np.nan, 'NA',     None],
              'Färg'       :['NA'  ,  'Grå', 'Vit',  'Blå',  np.nan, 'Brun',  'Vit'],
              'Årsmodell'  :[ 2019,   2018,   2019,   2017,  None,    2018,   'Osäkert värde'],
