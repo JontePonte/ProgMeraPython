@@ -13,3 +13,6 @@ beg_bilar = {'Bilmärke'   :['Volvo', 'BMW', 'AUDI', 'VW',   np.nan, 'NA',     N
              'Pris [tkr]' :[ 231,    None,   375,    255,   np.nan, 'NA',     195]}
 
 df_beg_bilar = pd.DataFrame(beg_bilar) #Skapa ett DataFrame-objekt över 'beg_bilar'
+
+df_beg_bilar.dropna(axis='columns', inplace=True)
+print(df_beg_bilar) # A bit weird question because all columns include NaN or None
