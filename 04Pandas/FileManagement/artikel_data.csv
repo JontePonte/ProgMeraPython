@@ -1,0 +1,10 @@
+Art. Nr;Artikel;Dimension;Kvalitet;Pris/100st;Lagerstatus
+100-101;Skruv;M3x25;Stål;125;Finns ej i lager
+100-102;Skruv;M3x50;Stål;130;Finns i lager
+102-100;Skruv;M3x25;Rostfritt;210;Finns i lager
+102-104;Skruv;M3x50;Rostfritt;225;Finns i lager
+103-200;Skruv;M3x25;Syrafast;275;Utgått
+201-105;Mutter;M3;Stål;90;Finns i lager
+202-200;Mutter;M3;Rostfritt;130;Finns i lager
+204-610;Mutter;M3;Syrafast;185;Finns ej i lager
+400-250;Bricka;M3;Stål;75;Finns ej i lager
